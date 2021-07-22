@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Ejemplo de @PathParam</h3>
+	<form action="http://localhost:8080/servREST/rest/cliente/21"
+		method="get">
+		<p>
+			<input type="submit" value=".../rest/cliente/21" />
+		</p>
+	</form>
+	<h3>Ejemplo de @QueryParam</h3>
+	<form action="http://localhost:8080/Practica_de_laboratorio02_ERP/rest/cliente/query"
+		method="get">
+		<p>
+			Id:<input type="text" name="id" />
+		</p>
+		<p>
+			<input type="submit" value=".../rest/cliente/query?id=*" />
+		</p>
+	</form>
+	<h3>Ejemplo de @QueryParam</h3>
+	<form action="http://localhost:8080/servREST/rest/cliente/query"
+		method="get">
+		<p>
+			User (id,Name)<input type="text" name="person" />
+		</p>
+		<p>
+			<input type="submit" value="...rest/cliente/query?person=*,*" />
+		</p>
+	</form>	
+</body>
+</html>
